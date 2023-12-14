@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spring-security-and-angular-demo';
+  greeting = {'id': 'XXX', 'content': 'Hello World'};
 }

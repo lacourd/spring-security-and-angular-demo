@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/spring-security-and-angular-demo",
+            "outputPath": "target/classes/static",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "spring-security-and-angular-demo:build:production"
+              "browserTarget": "client:build:production"
             },
             "development": {
-              "browserTarget": "spring-security-and-angular-demo:build:development"
+              "browserTarget": "client:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spring-security-and-angular-demo:build"
+            "browserTarget": "client:build"
           }
         },
         "test": {
